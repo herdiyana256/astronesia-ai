@@ -19,7 +19,7 @@ export function TypewriterText({ text, className, speed = 30, delay = 0, onCompl
   useEffect(() => {
     // Reset when text changes
     setDisplayText("")
-    completedRef.current = true
+    completedRef.current = false
 
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current)
