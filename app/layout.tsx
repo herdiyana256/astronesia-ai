@@ -41,7 +41,40 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head>
+        {/* Meta SEO tambahan */}
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="canonical" href="https://supernesia-ai.my.id" />
+
+        {/* Structured Data JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Astronesia-AI by Supernesia",
+              url: "https://supernesia-ai.my.id",
+              author: {
+                "@type": "Person",
+                name: "Herdiyan Adam Putra"
+              },
+              description:
+                "Get your daily horoscope powered by Astronesia-AI, an innovative project under Supernesia.",
+              inLanguage: "en"
+            })
+          }}
+        />
+      </head>
+      <body>
+        <header>{/* Optional: Navigation / Logo */}</header>
+        <main>{children}</main>
+        <footer>
+          <p>&copy; {new Date().getFullYear()} Supernesia-AI by Herdiyanitdev</p>
+        </footer>
+      </body>
     </html>
   )
 }
