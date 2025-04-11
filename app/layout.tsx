@@ -52,7 +52,20 @@ export default function RootLayout({
         {/* ✅ Google Search Console Verification */}
         <meta name="google-site-verification" content="9ju96LjPRXXqxxTu-toJGVB2nSnviujul76yVzI2t4s" />
 
-        {/* Structured Data JSON-LD */}
+        {/* ✅ Google Analytics 4 */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-JG0JXLZ311"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-JG0JXLZ311');
+            `,
+          }}
+        />
+
+        {/* ✅ Structured Data JSON-LD */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -76,7 +89,7 @@ export default function RootLayout({
         <header>{/* Optional: Navigation / Logo */}</header>
         <main>{children}</main>
         <footer>
-          <p>&copy; {new Date().getFullYear()} Supernesia-AI by Herdiyanitdev</p>
+          <p>&copy; {new Date().getFullYear()} Supernesia-AI by Astronesia</p>
         </footer>
       </body>
     </html>
