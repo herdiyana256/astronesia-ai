@@ -48,6 +48,9 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
         <link rel="canonical" href="https://supernesia-ai.my.id" />
 
+        {/* ✅ Google Search Console Verification */}
+        <meta name="google-site-verification" content="9ju96LjPRXXqxxTu-toJGVB2nSnviujul76yVzI2t4s" />
+
         {/* Structured Data JSON-LD */}
         <script
           type="application/ld+json"
