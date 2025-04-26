@@ -14,7 +14,21 @@ export const metadata: Metadata = {
     'AI horoscope generator',
     'Indonesian AI',
     'Herdiyanitdev',
-    'Supernesia AI project'
+    'Supernesia AI project',
+    'Horoskop Indonesia',
+    'Ramalan Zodiak Indonesia',
+    'Astrologi Indonesia',
+    'AI-powered astrology',
+    'Horoscope predictions AI',
+    'Personalized horoscope AI',
+    'AI horoscope technology',
+    'Global horoscope AI',
+    'Astrology technology',
+    'Artificial intelligence in astrology',
+    'Professional astrology tools',
+    'Astrology software AI',
+    'Astrological AI platform',
+    'AI in wellness astrology'
   ],
   authors: [{ name: 'Herdiyan Adam Putra', url: 'https://supernesia-ai.my.id' }],
   creator: 'Herdiyanitdev',
@@ -80,7 +94,18 @@ export default function RootLayout({
               },
               description:
                 "Get your daily horoscope powered by Astronesia-AI, an innovative project under Supernesia.",
-              inLanguage: "en"
+              inLanguage: "en",
+              keywords: [
+                "Astronesia-AI", "AI astrology", "Horoscope AI", "AI-powered horoscope", "Zodiac predictions AI"
+              ],
+              publisher: {
+                "@type": "Organization",
+                name: "Supernesia",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://supernesia-ai.my.id/logo.png"
+                }
+              }
             })
           }}
         />
